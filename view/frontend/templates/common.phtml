@@ -1,0 +1,15 @@
+<!--
+/**
+ * Copyright © Above The Fray Design, Inc. All rights reserved.
+ * See ATF_COPYING.txt for license details.
+ */
+-->
+
+<script>
+    require([
+        'atf/common',
+        'atf/persistent-customer-cache-fix'
+    ]);
+
+    window.customerAccountUrl = "<?= $block->getUrl('customer/account') ?>";
+</script>

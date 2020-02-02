@@ -1,0 +1,22 @@
+<?php
+/**
+ * Copyright © Above The Fray Design, Inc. All rights reserved.
+ * See ATF_COPYING.txt for license details.
+ */
+
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ */
+
+$file = $block->getViewFileUrl('ATF_Common::images/abovethefray-wrapped.svg');
+?>
+<div style="background:#fff; text-align: center;">
+    <div>
+        <img src="<?= $file; ?>" style="width: 300px;" title="<?php echo __('Above The Fray Design, Inc') ?>" />
+    </div>
+    <div>
+        <h3 style="margin-bottom: 10px;"><?php echo __('Contact us') ?></h3>
+        <a href="mailto:hello@neverfray.com"><?php echo __('hello@neverfray.com') ?></a> | <a href="tel:+1503-347-4700"><?php echo __('503-347-4700') ?></a>
+    </div>
+</div>
+

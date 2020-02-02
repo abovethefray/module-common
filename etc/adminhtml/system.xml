@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Above The Fray Design, Inc. All rights reserved.
+ * See ATF_COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="atf_extensions" translate="label" sortOrder="-500">
+            <label><![CDATA[<span class="abovethefray-logo">&nbsp;</span>]]></label>
+        </tab>
+        <section id="atf_common" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Info</label>
+            <tab>atf_extensions</tab>
+            <resource>ATF_Common::config_atf_common</resource>
+            <group id="hint" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <frontend_model>ATF\Common\Block\Adminhtml\System\Config\Fieldset\Hint</frontend_model>
+            </group>
+        </section>
+        <section id="dev">
+            <group id="atf_sensitive_console" translate="label" type="text" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>ATF Sensitive Console Commands</label>
+            </group>
+        </section>
+    </system>
+</config>

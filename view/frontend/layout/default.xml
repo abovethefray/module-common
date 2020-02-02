@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Above The Fray Design, Inc. All rights reserved.
+ * See ATF_COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="ATF_Common::css/owl-carousel/owl.carousel.min.css" />
+        <css src="ATF_Common::css/owl-carousel/owl.theme.default.min.css" />
+        <css src="ATF_Common::css/slick-carousel/slick-theme.css" />
+        <css src="ATF_Common::css/slick-carousel/slick.css" />
+        <css src="ATF_Common::css/lity.min.css" />
+        <css src="ATF_Common::css/simplebar.css" />
+    </head>
+    <body>
+        <referenceContainer name="before.body.end">
+            <block class="Magento\Framework\View\Element\Template" name="ATF.common" before="-" template="ATF_Common::common.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
