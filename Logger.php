@@ -19,14 +19,14 @@ class Logger
         self::logger($debugBackTrace[0]['file'] . ':' . $debugBackTrace[0]['line'], $level, $file);
     }
 
-    public static function trace()
+    public static function trace($file = '/var/log/atf-trace.log')
     {
         $debugBackTrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
-        self::logger('--- START TRACE:', 1, '/var/log/atf-trace.log');
+        self::logger('--- START TRACE:', 1, $file);
         foreach ($debugBackTrace as $item) {
             self::logger(@$item['class'] . @$item['type'] . @$item['function'] . ' ' . @$item['file'] . ':' . @$item['line'], 1, '/var/log/atf-trace.log');
         }
-        self::logger('--- END TRACE:', 1, '/var/log/atf-trace.log');
+        self::logger('--- END TRACE:', 1, $file);
     }
 
     private static function logger($message, $level = 1, $file = '/var/log/atf.log')
