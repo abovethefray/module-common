@@ -24,7 +24,7 @@ class Logger
         $debugBackTrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
         self::logger('--- START TRACE:', 1, $file);
         foreach ($debugBackTrace as $item) {
-            self::logger(@$item['class'] . @$item['type'] . @$item['function'] . ' ' . @$item['file'] . ':' . @$item['line'], 1, '/var/log/atf-trace.log');
+            self::logger(@$item['class'] . @$item['type'] . @$item['function'] . ' ' . @$item['file'] . ':' . @$item['line'], 1, $file);
         }
         self::logger('--- END TRACE:', 1, $file);
     }
