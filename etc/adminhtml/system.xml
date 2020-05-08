@@ -8,7 +8,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <tab id="atf_extensions" translate="label" sortOrder="-500">
-            <label><![CDATA[<span class="abovethefray-logo">&nbsp;</span>]]></label>
+            <label>Above The Fray</label>
         </tab>
         <section id="atf_common" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
