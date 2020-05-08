@@ -13,7 +13,7 @@ var config = {
         'lity': 'ATF_Common/js/plugin/lity.min',
         'simpleBar': 'ATF_Common/js/plugin/simplebar.min',
         'bodyScrollLock': 'ATF_Common/js/plugin/bodyScrollLock',
-        'slick': 'ATF_Common/js/plugin/slick-carousel/slick.min.js',
+        'slick': 'ATF_Common/js/plugin/slick-carousel/slick.min',
     },
     shim: {
         'atf/common': {
